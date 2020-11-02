@@ -1,0 +1,57 @@
+button{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+button:hover{
+  background-color: white;
+  color: black;
+}
+.div-area{
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 800px;
+  background-color: grey;
+  justify-content: space-around;
+  align-items: center;
+}
+.slow-box{
+  width:300px;
+  height: 25px;
+  background-color: lightblue;
+}
+.medium-box{
+  width:300px;
+  height: 25px;
+  background-color: lightyellow;
+}
+.fast-box{
+  width:300px;
+  height: 25px;
+  background-color: lightgreen;
+}
+.slow-fade{
+      /* animation name arbitrary    eases in    duration */
+  animation: slowfade             ease       10s;
+}
+@keyframes slowfade {
+  0% {opacity:0;} /*starts invisible*/
+  100%{opacity:1}/*end fully solid after 10s*/
+
+}
+.medium-fade{
+  animation: mediumfade ease 5s;
+}
+@keyframes mediumfade {
+  0% {opacity:0;}
+  100% {opacity: 1;}
+}
+.fast-fade{
+  animation: fastfade ease 2s;
+}
+@keyframes fastfade {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+
+}
